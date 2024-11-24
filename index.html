@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaikodo - Próximamente</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center p-4">
+    <div class="max-w-4xl mx-auto text-center">
+        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-8 shadow-2xl">
+            <div class="float-animation">
+                <h1 class="text-6xl font-bold text-white mb-4">Zaikodo</h1>
+                <div class="text-2xl text-white mb-8">Sistema POS en línea</div>
+            </div>
+            
+            <div class="text-xl text-white mb-8">
+                ¡Muy pronto estaremos disponibles para revolucionar tu negocio!
+            </div>
+
+            <div class="space-y-6 mb-8">
+                <div class="text-white text-lg">
+                    <p>Prepárate para una nueva experiencia en punto de venta</p>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
+                <input type="email" placeholder="Tu correo electrónico" class="px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
+                    Notifícame cuando esté disponible
+                </button>
+            </div> -->
+
+            <div class="text-white text-opacity-80 text-sm">
+                © 2024 Zaikodo. Todos los derechos reservados.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
