@@ -6,45 +6,74 @@
     <title>Zaikodo - Próximamente</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
     <style>
-        @keyframes float {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-20px); }
-            100% { transform: translateY(0px); }
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
-        .float-animation {
-            animation: float 3s ease-in-out infinite;
+        .fade-in {
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        .button-hover:hover {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 20px rgba(72, 187, 120, 0.4);
+        }
+        .subtle-glow {
+            box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.2);
         }
     </style>
 </head>
-<body class="bg-gradient-to-br from-blue-500 to-purple-600 min-h-screen flex items-center justify-center p-4">
-    <div class="max-w-4xl mx-auto text-center">
-        <div class="bg-white bg-opacity-10 backdrop-blur-lg rounded-xl p-8 shadow-2xl">
-            <div class="float-animation">
-                <h1 class="text-6xl font-bold text-white mb-4">Zaikodo</h1>
-                <div class="text-2xl text-white mb-8">Sistema POS en línea</div>
-            </div>
-            
-            <div class="text-xl text-white mb-8">
-                ¡Muy pronto estaremos disponibles para revolucionar tu negocio!
-            </div>
-
-            <div class="space-y-6 mb-8">
-                <div class="text-white text-lg">
-                    <p>Prepárate para una nueva experiencia en punto de venta</p>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 text-white min-h-screen flex items-center justify-center p-6">
+    <div class="max-w-4xl w-full mx-auto text-center fade-in">
+        <!-- Logo -->
+        <div class="flex justify-center mb-8">
+            <img src="Imagotipo.png" alt="Zaikodo Logo" class="w-28 h-28 subtle-glow">
+        </div>
+        
+        <!-- Heading -->
+        <h1 class="text-5xl font-extrabold text-green-400 mb-4">
+            ¡Zaikodo está en camino!
+        </h1>
+        <p class="text-lg text-gray-300 mb-8">
+            Un sistema POS en línea para transformar la manera en que gestionas tu negocio.
+        </p>
+        
+        <!-- Call to Action -->
+        <!-- <div class="mb-8">
+            <button class="bg-green-500 text-white font-semibold px-6 py-3 rounded-full button-hover transform transition duration-300">
+                Notifícame cuando esté listo
+            </button>
+        </div> -->
+        
+        <!-- Features Section -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left max-w-3xl mx-auto">
+            <div class="flex items-center space-x-4">
+                <div class="bg-green-500 w-12 h-12 flex items-center justify-center rounded-full text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h11M9 21H4a2 2 0 01-2-2v-5m0-4v5a2 2 0 002 2h5m8-6a2 2 0 00-2-2H9m4-6h2a2 2 0 012 2v1a2 2 0 01-2 2h-2a2 2 0 01-2-2V4a2 2 0 012-2z"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-green-400">Fácil de Usar</h3>
+                    <p class="text-gray-300">Interfaz intuitiva para simplificar tus operaciones.</p>
                 </div>
             </div>
-
-            <!-- <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
-                <input type="email" placeholder="Tu correo electrónico" class="px-6 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
-                <button class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg transition-colors duration-300">
-                    Notifícame cuando esté disponible
-                </button>
-            </div> -->
-
-            <div class="text-white text-opacity-80 text-sm">
-                © 2024 Zaikodo. Todos los derechos reservados.
+            <div class="flex items-center space-x-4">
+                <div class="bg-green-500 w-12 h-12 flex items-center justify-center rounded-full text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m-2 4H9v-4H8m1 4H7v-4H6m7 4h2a2 2 0 002-2V6a2 2 0 00-2-2h-2m-3 4h4m-4 4h4m-7 2h3m-3-10h3m-3-2h3"/>
+                    </svg>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-green-400">Potente y Seguro</h3>
+                    <p class="text-gray-300">Protege tus datos con nuestra tecnología avanzada.</p>
+                </div>
             </div>
         </div>
+
+        <!-- Footer -->
+        <footer class="mt-16 text-gray-500 text-sm">
+            © 2024 Zaikodo. Todos los derechos reservados.
+        </footer>
     </div>
 </body>
 </html>
